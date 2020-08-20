@@ -10,19 +10,19 @@ const gamePictute = new Image();
 gamePictute.src = "sprite.png";
 /*----------------------Nhạc Game------------------------ */
 const sound_of_Score = new Audio();
-sound_of_Score.src = "sfx_point.wav";//Lúc tăng điểm
+sound_of_Score.src = "sound_point.wav";//Lúc tăng điểm
 
 const Flap = new Audio();
-Flap.src = "sfx_flap.wav"; //Lúc nhảy
+Flap.src = "sound_flap.wav"; //Lúc nhảy
 
 const Hit = new Audio();
-Hit.src = "sfx_hit.wav"; //Lúc đụng vào cột
+Hit.src = "sound_hit.wav"; //Lúc đụng vào cột
 
 const SWOOSHING = new Audio();
-SWOOSHING.src = "sfx_swooshing.wav";//Lúc qua bay
+SWOOSHING.src = "sound_swooshing.wav";//Lúc qua bay
 
 const Died = new Audio();
-Died.src = "sfx_die.wav";//Nhạc game over
+Died.src = "sound_die.wav";//Nhạc game over
 
 // BACKGROUND
 const BackGround = {
