@@ -123,12 +123,12 @@ const bird = {
                 }
             }
             
-            // IF THE SPEED IS GREATER THAN THE JUMP MEANS THE BIRD IS FALLING DOWN
+            // Chim chuối xuống
             if(this.speed >= this.jump){
                 this.rotation = 90 * degree;
                 this.frame = 1;
             }else{
-                this.rotation = -25 * degree;
+                this.rotation = -25 * degree;//Chim bay lên
             }
         }
         
