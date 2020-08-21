@@ -101,11 +101,11 @@ const bird = {
     },
     
     update: function(){
-        // IF THE GAME STATE IS GET READY STATE, THE BIRD MUST FLAP SLOWLY
+        // Bay chậm ở trạng thái get ready
         this.period = status.current == status.getReady ? 10 : 5;
-        // WE INCREMENT THE FRAME BY 1, EACH PERIOD
+        // Tăng frame lên 1 mỗi trạng thái
         this.frame += frames%this.period == 0 ? 1 : 0;
-        // Khi this.Frame tăng tới 4 thì quay về ko do animation chỉ có 4 hình
+        // Khi this.Frame tăng tới 4 thì quay về 0 do animation chỉ có 4 hình
         this.frame = this.frame%this.animation.length;
         
         if(status.current == status.getReady){
